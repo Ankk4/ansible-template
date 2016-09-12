@@ -1,0 +1,5 @@
+# Dump all 'setup' facts to files
+ansible datacenter -i inventory -m setup --tree ./setup
+
+# Print only network related facts
+ansible datacenter -i inventory -m setup -a "filter=ansible_eth*"

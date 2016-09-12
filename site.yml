@@ -1,0 +1,7 @@
+---
+- name: MongoDB and C++ Driver deployment
+  gather_facs: No
+
+  tasks: 
+    - name:
+      module:

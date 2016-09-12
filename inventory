@@ -1,0 +1,16 @@
+# Ansible control machine
+acs ansible_connection=local
+
+# Servers that default to Python3
+[python3]
+
+# Test servers
+[devservers]
+acs
+
+[dbservers]
+db1
+
+[datacenter:children]
+dbservers
+python3
